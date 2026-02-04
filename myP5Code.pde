@@ -1,28 +1,51 @@
-//🟢setup Function - will run once
-setup = function() {
+//🟢COWWWW setup Function - will run once 
+setup = function() 
+{
     size(600, 400);
     background(255,255,255,0);
-    
-  
+    drawCow(478,250);    
+    drawGoat(250,350);  
+    drawPig(45,260);
 };
 
-//🟢draw Function - will run on repeat
-draw = function(){
+
+//🟢draw Function - will run on repeat 
+draw = function()
+{
 
 };
 
-//🟢mouseClicked Function - will run when mouse is clicked
-mouseClicked = function(){
+//🟢mouseClicked Function - will run when mouse is clicked 
+mouseClicked = function()
+{
+textSize(25);
+text("🐾",mouseX, mouseY);
 
 }
 
-//🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
+//🟡drawCow Function - will run when called 
+var drawCow = function(CowX, CowY)
+{
   textSize(80);
-  fill(fishColor);
-  text("𓆝", fishX, fishY);
+
+  text("🐄", CowX, CowY);
 };
 
 
+//🟡drawCow Function - will run when called 
+var drawGoat = function(GoatX, GoatY)
+{
+  textSize(70);
+
+  text("🐐", GoatX, GoatY);
+};
+
+//🟡drawCow Function - will run when called 
+var drawPig = function(PigX, PigY)
+{
+  textSize(70);
+
+  text("🐖", PigX, PigY);
+};
 
 
