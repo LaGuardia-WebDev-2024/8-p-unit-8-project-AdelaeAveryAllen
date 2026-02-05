@@ -1,11 +1,11 @@
-//🟢COWWWW setup Function - will run once 
+//🟢setup Function - will run once 
 setup = function() 
 {
     size(600, 400);
     background(255,255,255,0);
-    drawCow(478,250);    
-    drawGoat(250,350);  
-    drawPig(45,260);
+    drawCow(478,250); //this one is for the cow   
+    drawGoat(250,350); //this one is for the goat
+    drawPig(45,260); //this one is for the pig
 };
 
 
@@ -18,8 +18,18 @@ draw = function()
 //🟢mouseClicked Function - will run when mouse is clicked 
 mouseClicked = function()
 {
-textSize(25);
-text("🐾",mouseX, mouseY);
+textSize(35);
+if(mouseY<289){
+   textSize(57);
+  text("🛸", mouseX, mouseY);
+}
+else{
+  textSize(25);
+  text("🐾",mouseX, mouseY);
+}
+
+
+
 
 }
 
